@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Mi Portafolio</header>
+    <button class="theme-toggle" id="theme-toggle">Cambiar a modo oscuro</button>
+    <div class="container">
+        <div class="card profile">
+            <div class="profile-text">
+                <h2>Victoria Rescala</h2>
+                <p>Apasionada del arte, me encanta crear bocetos en mi mente para luego plasmarlos en papel.</p>
+            </div>
+            <img src="fotoperfil.jpg" alt="Foto de perfil">
+        </div>
+        <div class="grid-container">
+            <div class="card grid-item">
+                <h2>Estudios</h2>
+                <p>Actualmente alumna de 7mo año estudiando en el Instituto El Obraje, especializándome en informática.</p>
+            </div>
+            <div class="card grid-item">
+                <h2>Proyectos</h2>
+                <p>Aquí uno de mis trabajos:</p>
+                <img src="logo1.jpg" alt="Proyecto 1">
+            </div>
+        </div>
+        <div class="card contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en:</p>
+            <p>Email: <a href="mailto:virorescalallla@gmail.com">virorescalallla@gmail.com</a></p>
+            <p>Teléfono: +54 3547 651598</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 - Victoria Rescala
+    </footer>
+
+    <script>
+        const themeToggleButton = document.getElementById("theme-toggle");
+
+        themeToggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                themeToggleButton.textContent = "modo claro";
+            } else {
+                themeToggleButton.textContent = "modo oscuro";
+            }
+        });
+    </script>
+</body>
+</html>

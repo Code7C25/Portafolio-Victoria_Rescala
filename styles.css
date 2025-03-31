@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5a0b0b;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #3f0404;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.container {
+    background-color: #5a0b0b;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+}
+
+.profile-text {
+    flex: 1;
+    text-align: left;
+}
+
+.profile img {
+    width: 270px;
+    height: 200px;
+    margin-left: auto;
+}
+
+.contacto {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #000000;
+}
+
+body.dark-mode .container {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .card {
+    background: #444;
+    color: white;
+}
+
+body.dark-mode .card img {
+    border: 2px solid #fff;
+}
+
+body.dark-mode .contacto {
+    background: #555;
+}
+
+body.dark-mode footer {
+    background-color: #555;
+}
+
+/* Botón de cambio de tema */
+.theme-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.theme-toggle:hover {
+    background-color: #444;
+    
+}
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
