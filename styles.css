@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5a0b0b;
+    background-color: #0b105a;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
